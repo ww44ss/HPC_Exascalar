@@ -1,12 +1,12 @@
 # HPC_Exascalar
 
-This repository contains data on the Top500 Supercomputers from 2011 to present.. The data are from the [Top500](top500.org) and [Green500](green500.org) websites. 
+This repository contains data on the Top500 Supercomputers from 2011 to present. The data are copied from the [Top500](top500.org) and [Green500](green500.org) websites, and presented in combined form as a single file, with each system (500 per list) assigned a corresponding list-date and associated variables from the two lists.  
 
 The raw data from each website are saved as lightly cleaned .csv files in respective directories. Some cleaning was necessary, especially on the Green500 lists, to ensure data completeness (for example one instance didn't contain the corresponding Top500 ranking, which was used to concatenate the lists) and consitency (an early version of the Green500, for instance, gave ~equivalent Green systems the same ranking, a practice later dropped).
 
-All the data are combined, using `Exascalar_Cleaner.R` into a single large data file (containing ~9500 rows and 39 columns) with cleaned variable names, which is save here. Since the earliest list (2007) has about 25 observations per computer and the current lists tracks almost 40 variables, many data are incomplete over the entire timespan. 
+All the data are combined, using `Exascalar_Cleaner.R` into a single large data file (containing ~9500 rows and 39 columns in November 2016) with cleaned variable names. As the earliest list (2007) had about 25 observations per computer and the current lists tracks almost 40 variables, many data are incomplete over the entire time-span. 
 
-Exascalar.csv  
+Variables in `Exascalar.csv`:
  [1] "rank": System Ranking by performance (e.g. 1) for given date.  
  [2] "previousrank": System rank on the previous list (e.g. NA).             
  [3] "firstappearance": The list on which the system first appeared (needs to be translated.) (e.g. 41)
@@ -42,7 +42,7 @@ Exascalar.csv
 [33] "interconnect": description of interconnect (e.g. "Cray Gemini interconnect")
 [34] "region": where it is (e.g. "Eastern Asia")                    
 [35] "continent": where it is (e.g. "Asia")
-[36] "date": data of list - this is added by me (e.g. "2016-11-01" or "2016-06-01")                       
+[36] "list.date": listdate by year-month (day is always -01) (e.g. "2016-11-01" or "2016-06-01").                        
 [37] "green500rank": green 500 rank for specific data (e.g. 135)
 [38] "green500power": power in kWatt as reported by green500 list.(e.g. 17808)              
 [39] "Exascalar":computed exascalar Exascalar = (log10(rmax\*10^3/ExaPerf) + log10(mflopsperwatt/(ExaEff)))/sqrt(2)) 
