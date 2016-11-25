@@ -9,7 +9,7 @@ All the data are combined, using `Exascalar_Cleaner.R` into a single large data 
 Exascalar.csv  
  [1] "rank": System Ranking by performance (e.g. 1) for given date.  
  [2] "previousrank": System rank on the previous list (e.g. NA).             
- [3] "firstappearance": The list on which the system first appeared (encoded by number, needs to be translated.) (e.g. 41)
+ [3] "firstappearance": The list on which the system first appeared (needs to be translated.) (e.g. 41)
  [4] "firstrank": Rank when system first appeared on a list (e.g. 1)                 
  [5] "name": Short system name (e.g. ("Sunway TaihuLight")
  [6] "computer": longer description of the computer(e.g. "BlueGene/Q, Power BQC 16C 1.60 GHz, Custom")                   
@@ -19,8 +19,8 @@ Exascalar.csv
  [10] "year": year system was made (e.g. 2012)       
 [11] "segment": economic segment (e.g. "Research")  
 [10] "totalcores": total cores in system (e.g. 1572864 )                   
-[13] "acceleratorcoprocessorcores": added in about 2012, tracking emergence of accelerators. 
-[14] "rmax": max performance (used for Top500 ranking).                       
+[13] "acceleratorcoprocessorcores": number of co-processor cores (e.g. 230000).    
+[14] "rmax": max performance (used for Top500 ranking).                        
 [15] "rpeak": peak instantaneous peroformance. 
 [16] "nmax":                     
 [17] "nhalf":
