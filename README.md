@@ -7,7 +7,7 @@ The raw data from each website are saved as lightly cleaned .csv files in respec
 
 All the data are combined, using `Exascalar_Cleaner2.R` into a single large data file (containing ~9500 rows and 39 columns in November 2016) with cleaned variable names. As the earliest list (2007) had about 25 observations per computer and the current lists tracks almost 40 variables, many data are incomplete over the entire time-span. 
 
-### Variables in `Exascalar.csv`:  
+### Variables in `BigExascalar.csv`:  
  - __rank:__ System Ranking by performance (e.g. 1) for given date.  
  - __previousrank:__ System rank on the previous list (e.g. _NA_).             
  - __firstappearance:__ The list on which the system first appeared (needs to be translated.) (e.g. 41)
