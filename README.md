@@ -1,14 +1,15 @@
 # HPC_Exascalar
 
-This repository contains data on the Top500 Supercomputers from 2011 to present. The data are copied from the [Top500](top500.org) and [Green500](green500.org) websites, and presented in combined form as a single file, with each system (500 per list) assigned a corresponding list-date and associated variables from the two lists.  
+This repository contains data on the Top500 Supercomputers from November 2011 to present. The data are copied from the [Top500](top500.org) and [Green500](green500.org) websites, and presented in combined form as a single file `BigExascalar.csv`, with each system (500 per list) assigned a corresponding list.date and associated variables from the two lists.  
 
+### Data Methods:
 The raw data from each website are saved as lightly cleaned .csv files in respective directories. Some cleaning was necessary, especially on the Green500 lists, to ensure data completeness (for example one instance didn't contain the corresponding Top500 ranking, which was used to concatenate the lists) and consitency (an early version of the Green500, for instance, gave ~equivalent Green systems the same ranking, a practice later dropped).
 
 All the data are combined, using `Exascalar_Cleaner2.R` into a single large data file (containing ~9500 rows and 39 columns in November 2016) with cleaned variable names. As the earliest list (2007) had about 25 observations per computer and the current lists tracks almost 40 variables, many data are incomplete over the entire time-span. 
 
-Variables in `Exascalar.csv`:  
+### Variables in `Exascalar.csv`:  
  - __rank:__ System Ranking by performance (e.g. 1) for given date.  
- - __previousrank:__ System rank on the previous list (e.g. NA).             
+ - __previousrank:__ System rank on the previous list (e.g. _NA_).             
  - __firstappearance:__ The list on which the system first appeared (needs to be translated.) (e.g. 41)
  - __firstrank:__ Rank when system first appeared on a list (e.g. 1)                 
  - __name:__ Short system name (e.g. ("Sunway TaihuLight")
