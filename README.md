@@ -43,8 +43,8 @@ Variables in `Exascalar.csv`:
  - __region:__ where it is (e.g. "Eastern Asia").                    
  - __continent:__ where it is (e.g. "Asia").  
  - __list.date:__ listdate by year-month (day is always -01) (e.g. "2016-11-01" or "2016-06-01").                        
- - __green500rank:__ green 500 rank for specific data (e.g. 135).
- _ __green500power:__ power in kWatt as reported by green500 list.(e.g. 17808).              
+ - __green500rank:__ green 500 rank for specific data (e.g. 135).  
+ - __green500power:__ power in kWatt as reported by green500 list.(e.g. 17808).              
  - __Exascalar:__ computed exascalar Exascalar = (log10(rmax\*10^3/ExaPerf) + log10(mflopsperwatt/(ExaEff)))/sqrt(2)) 
 
 ### note:  
