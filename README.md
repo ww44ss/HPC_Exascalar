@@ -28,23 +28,23 @@ Variables in `Exascalar.csv`:
  - __powersource:__ was the data submitted or inferred.  
  - __mflopsperwatt:__ efficiency in megaflops per watt.              
  - __architecture:__ description of system architecture.  
- - __processor:__ long processor descriptions (e.g. "Intel Xeon E5-2692v2 12C 2.2GHz")                
+ - __processor:__ long processor descriptions (e.g. "Intel Xeon E5-2692v2 12C 2.2GHz").                  
  - __processortechnology:__ short description (e.g. "Intel IvyBridge").
  - __processorspeed.mhz:__ clock speed in mhz (e.g. 1450).        
  - __operatingsystem:__ operating system detailed descrition (e.g. "Cray Linux Environment").  
  - __osfamily:__ short description (e.g. "Linux").                    
- - __acceleratorcoprocessor:__ long description of accelerator co-processor (e.g. "NVIDIA Tesla K20x")
- - __corespersocket:__ a number (e.g. 260)            
- - __processorgeneration:__ processor description (e.g. "Opteron 6200 Series \"Interlagos\"")
- - __systemmodel:__ Model name from manufacturer (e.g. "Cray XK7")               
- - __systemfamily:__ Family name of system (e.g. "Cray XK")
- - __interconnectfamily:__ high level interconnect description (e.g. "Custom Interconnect")         
- - __interconnect:__ description of interconnect (e.g. "Cray Gemini interconnect")
- - __region:__ where it is (e.g. "Eastern Asia")                    
- - __continent:__ where it is (e.g. "Asia")
+ - __acceleratorcoprocessor:__ long description of accelerator co-processor (e.g. "NVIDIA Tesla K20x").  
+ - __corespersocket:__ a number (e.g. 260).              
+ - __processorgeneration:__ processor description (e.g. "Opteron 6200 Series \"Interlagos\"").  
+ - __systemmodel:__ Model name from manufacturer (e.g. "Cray XK7").                
+ - __systemfamily:__ Family name of system (e.g. "Cray XK").  
+ - __interconnectfamily:__ high level interconnect description (e.g. "Custom Interconnect").          
+ - __interconnect:__ description of interconnect (e.g. "Cray Gemini interconnect").  
+ - __region:__ where it is (e.g. "Eastern Asia").                    
+ - __continent:__ where it is (e.g. "Asia").  
  - __list.date:__ listdate by year-month (day is always -01) (e.g. "2016-11-01" or "2016-06-01").                        
- - __green500rank:__ green 500 rank for specific data (e.g. 135)
- _ __green500power:__ power in kWatt as reported by green500 list.(e.g. 17808)              
+ - __green500rank:__ green 500 rank for specific data (e.g. 135).
+ _ __green500power:__ power in kWatt as reported by green500 list.(e.g. 17808).              
  - __Exascalar:__ computed exascalar Exascalar = (log10(rmax\*10^3/ExaPerf) + log10(mflopsperwatt/(ExaEff)))/sqrt(2)) 
 
 ### note:  
