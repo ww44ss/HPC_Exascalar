@@ -48,7 +48,6 @@ All the data are combined, using `Exascalar_Cleaner2.R`, current to November 201
  - __green500power:__ power in kWatt as reported by green500 list.(e.g. 17808).              
  - __Exascalar:__ computed exascalar Exascalar = (log10(rmax\*10^{3}/ExaPerf) + log10(mflopsperwatt/(ExaEff)))/sqrt(2))
 
-$ \alpha $
 
 ### note:  
 The raw versions of the Top500 data (as .xls files) are stored in the /Top500data/Top500raw directory. Since the Green500 were (until November 2016) avaiable online at .csv files, these are stored as lightly cleaned files in the /Green500 directory. As of November 2016, the Green500 is making only .xlsx files. These are saved in /Green500/Green500raw directory henceforth. Historical Green500 data before November 2014 appear to be no longer available on the website.
